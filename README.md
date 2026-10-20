@@ -37,15 +37,17 @@ flowchart LR
     G --> H[TF TCP error and MP4]
 ```
 
+
 ## 🎬 Demo | 演示视频
 
-Franka Panda visual-guided pregrasp demonstration using Isaac Sim, FoundationPose, ROS2, and MoveIt2.
+点击下方图片观看 Franka Panda 视觉引导预抓取演示。
 
-[▶ Watch the Robot Motion Demo](assets/demo.mp4)
+[![Watch Robot Motion Demo](assets/demo_preview.png)](assets/demo.mp4)
 
-> This demo demonstrates single-frame vision-guided pregrasp positioning, not physical object grasping or real-time visual servoing.
+**[▶ Watch Full Demo (MP4)](assets/demo.mp4)**
 
-## Reproduction / 复现
+> Single-frame FoundationPose estimation → ROS2 coordinate transformation → MoveIt2 motion planning → Isaac Sim pregrasp execution.
+
 
 **Read [docs/reproduction.md](docs/reproduction.md) first.** This is a source-derived reproduction guide for the recorded AutoDL setup; it is **not a container or fully clean-machine verified installer**. The ROS workspace and pretrained FoundationPose weights must be acquired independently. The upstream FoundationPose patch used during the original build is documented.
 
