@@ -41,7 +41,7 @@ flowchart LR
 
 Franka Panda visual-guided pregrasp demonstration using Isaac Sim, FoundationPose, ROS2, and MoveIt2.
 
-[▶ Watch the robot motion demo (MP4)](demo.mp4)
+[▶ Watch the Robot Motion Demo](assets/demo.mp4)
 
 > This demo demonstrates single-frame vision-guided pregrasp positioning, not physical object grasping or real-time visual servoing.
 
