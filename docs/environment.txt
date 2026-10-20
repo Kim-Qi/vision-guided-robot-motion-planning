@@ -1,0 +1,23 @@
+System: Linux-5.15.0-94-generic-x86_64-with-glibc2.35
+GPU: NVIDIA GeForce RTX 4090 D, 580.76.05, 24564 MiB
+ROS 2: humble
+Git: git version 2.34.1
+
+Third-party repositories: {"FoundationPose": "NO GIT METADATA", "IsaacSim_ros_5.1": "NO GIT METADATA"}
+
+Key packages (captured environment):
+[isaacsim]
+isaacsim==5.1.0.0
+numpy==1.26.0
+torch==2.7.0
+torchvision==0.22.0
+trimesh==4.5.1
+[foundationpose]
+numpy==2.4.6
+nvdiffrast==0.4.0
+open3d==0.20.0
+opencv-python==5.0.0.93
+pytorch3d==0.7.9
+torch==2.5.1+cu118
+torchvision==0.20.1+cu118
+trimesh==5.1.1

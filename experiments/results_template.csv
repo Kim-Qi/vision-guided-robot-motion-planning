@@ -1,0 +1,1 @@
+trial_id,object_gt_x_m,object_gt_y_m,object_gt_z_m,estimated_x_m,estimated_y_m,estimated_z_m,pose_error_mm,ik_success,planning_success,execution_success,tcp_error_mm,downward_angle_deg,planning_time_s,execution_time_s,video_path,notes

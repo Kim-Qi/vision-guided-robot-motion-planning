@@ -1,0 +1,19 @@
+{
+  "estimated_world_position_m": [
+    0.549253944836581,
+    -0.4000142365555266,
+    0.0637985629757214
+  ],
+  "ground_truth_world_position_m": [
+    0.55,
+    -0.4,
+    0.065
+  ],
+  "translation_error_m": 0.0014143026230920182,
+  "estimated_panda_link0_position_m": [
+    0.549253944836581,
+    -0.4000142365555266,
+    0.0637985629757214
+  ],
+  "extrinsics_source": "Reconstructed from Isaac Sim camera configuration"
+}

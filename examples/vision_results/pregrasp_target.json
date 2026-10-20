@@ -1,0 +1,21 @@
+{
+  "frame_id": "panda_link0",
+  "source": "FoundationPose world pose with corrected base transform",
+  "object_center_m": [
+    0.549253944836581,
+    -0.4000142365555266,
+    0.0637985629757214
+  ],
+  "pregrasp_position_m": [
+    0.549253944836581,
+    -0.4000142365555266,
+    0.2437985629757214
+  ],
+  "vertical_hand_target_m": [
+    0.549253944836581,
+    -0.4000142365555266,
+    0.3021985629757214
+  ],
+  "position_only": true,
+  "execute": false
+}
