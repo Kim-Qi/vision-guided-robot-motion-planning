@@ -1,0 +1,232 @@
+{
+  "experiments/verified/multi_red_016/task_result.json": {
+    "original_sha256": "577521e79c5ab9ebfcfa186117403f55535d761db5f1bb0619a697cba04ecf79",
+    "published_sha256": "577521e79c5ab9ebfcfa186117403f55535d761db5f1bb0619a697cba04ecf79",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_red_016/scene_config.json": {
+    "original_sha256": "5944e2f9b364ef03ad24462a5f53803dd69b296aa9dac67195fe05ccffd047ef",
+    "published_sha256": "5944e2f9b364ef03ad24462a5f53803dd69b296aa9dac67195fe05ccffd047ef",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_red_016/initial_state.json": {
+    "original_sha256": "701ff53e7bc7d2dd75c37a957d4f61fde2a3c0209192c4d3051f66cc9aa22b9d",
+    "published_sha256": "701ff53e7bc7d2dd75c37a957d4f61fde2a3c0209192c4d3051f66cc9aa22b9d",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_red_016/vision_data/metadata.json": {
+    "original_sha256": "7c88bbcd97eaa22f764050c038c05ff09b3bfc1e3778e8c42fb44a716ce97638",
+    "published_sha256": "7c88bbcd97eaa22f764050c038c05ff09b3bfc1e3778e8c42fb44a716ce97638",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_red_016/vision_results/detections.json": {
+    "original_sha256": "4e626f750771d75563ae11fdbd3f97696bfdbf1e395db4ef046f637d075f2803",
+    "published_sha256": "4e626f750771d75563ae11fdbd3f97696bfdbf1e395db4ef046f637d075f2803",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_red_016/orchestration.json": {
+    "original_sha256": "660bd80635c9b8c50092a10b1a065b42a09fef74a68857baad52d89b1cc60f40",
+    "published_sha256": "3e2e4bc1daac765701621d7d127fc0c777ddf0189adc5b14548f4c6ebbf3e0dd",
+    "transformation": "run_dir made repository-relative"
+  },
+  "experiments/verified/multi_red_016/camera_extrinsics.json": {
+    "original_sha256": "1379291db9b87a4485dd14929e310a0435d984e522d8cc841d086350a4aa8291",
+    "published_sha256": "1379291db9b87a4485dd14929e310a0435d984e522d8cc841d086350a4aa8291",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_red_016/controllers_used.yaml": {
+    "original_sha256": "d9743371e6af085e5efaf233d24cbfdfeb68abda80758844628e7d6bea0af3f9",
+    "published_sha256": "d9743371e6af085e5efaf233d24cbfdfeb68abda80758844628e7d6bea0af3f9",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_red_016/acceptance.json": {
+    "original_sha256": "68ac01cb4d797225d5dd271d38d56130d3c28288b60a44a2f467060fa80144b2",
+    "published_sha256": "68ac01cb4d797225d5dd271d38d56130d3c28288b60a44a2f467060fa80144b2",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_red_016/manifest.json": {
+    "original_sha256": "3fed0effe9ad3f531c2ed859cc8c1a1158f8cc50a2c2ccf5c1c3079d15a95b9b",
+    "published_sha256": "3fed0effe9ad3f531c2ed859cc8c1a1158f8cc50a2c2ccf5c1c3079d15a95b9b",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_blue_015/task_result.json": {
+    "original_sha256": "324e6cadb0225032e6aec8e17c1d1d60e50f2d21213f7338fc1087dda14e6ad8",
+    "published_sha256": "324e6cadb0225032e6aec8e17c1d1d60e50f2d21213f7338fc1087dda14e6ad8",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_blue_015/scene_config.json": {
+    "original_sha256": "5944e2f9b364ef03ad24462a5f53803dd69b296aa9dac67195fe05ccffd047ef",
+    "published_sha256": "5944e2f9b364ef03ad24462a5f53803dd69b296aa9dac67195fe05ccffd047ef",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_blue_015/initial_state.json": {
+    "original_sha256": "fc0524fd8b8211b64509202a4d297e72e32126ba95c97a58e4068447a22e9115",
+    "published_sha256": "fc0524fd8b8211b64509202a4d297e72e32126ba95c97a58e4068447a22e9115",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_blue_015/vision_data/metadata.json": {
+    "original_sha256": "11b996776e6f7d5ec97577c66aa93bf413526ea1a1ed03385fbf1a3d6a6c0657",
+    "published_sha256": "11b996776e6f7d5ec97577c66aa93bf413526ea1a1ed03385fbf1a3d6a6c0657",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_blue_015/vision_results/detections.json": {
+    "original_sha256": "4ad2e914249b7bc1b442c48f40cf5e4da9169d7ab8360cbb19703d568b526326",
+    "published_sha256": "4ad2e914249b7bc1b442c48f40cf5e4da9169d7ab8360cbb19703d568b526326",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_blue_015/orchestration.json": {
+    "original_sha256": "44ca62cc49b2cc5ccdb1806b012b7e57c680d04e065cc1b5aba559db38d5955d",
+    "published_sha256": "2361161399e597a843982f4a28dda25740666c51b9880c3aa63ab6a4029b40ff",
+    "transformation": "run_dir made repository-relative"
+  },
+  "experiments/verified/multi_blue_015/camera_extrinsics.json": {
+    "original_sha256": "32bb3662adb2382d67b29f933c21ecf3cf014389242ed0ea7e574be74125f3ae",
+    "published_sha256": "32bb3662adb2382d67b29f933c21ecf3cf014389242ed0ea7e574be74125f3ae",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_blue_015/controllers_used.yaml": {
+    "original_sha256": "d9743371e6af085e5efaf233d24cbfdfeb68abda80758844628e7d6bea0af3f9",
+    "published_sha256": "d9743371e6af085e5efaf233d24cbfdfeb68abda80758844628e7d6bea0af3f9",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_blue_015/acceptance.json": {
+    "original_sha256": "0afcb82d54a2ff3ce15c7343b0ee24f4c94cbf0a0f09be72ddb39ff172332e45",
+    "published_sha256": "0afcb82d54a2ff3ce15c7343b0ee24f4c94cbf0a0f09be72ddb39ff172332e45",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_blue_015/manifest.json": {
+    "original_sha256": "bff11b83bf20f974941885955dfdc286d4552f5f92adbcd9c95b13e4b87ed517",
+    "published_sha256": "bff11b83bf20f974941885955dfdc286d4552f5f92adbcd9c95b13e4b87ed517",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_green_017/task_result.json": {
+    "original_sha256": "299aa17ac9615ee040da32257cfa6795690f13fdd2edebf8bf9595e4548228d9",
+    "published_sha256": "299aa17ac9615ee040da32257cfa6795690f13fdd2edebf8bf9595e4548228d9",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_green_017/scene_config.json": {
+    "original_sha256": "5944e2f9b364ef03ad24462a5f53803dd69b296aa9dac67195fe05ccffd047ef",
+    "published_sha256": "5944e2f9b364ef03ad24462a5f53803dd69b296aa9dac67195fe05ccffd047ef",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_green_017/initial_state.json": {
+    "original_sha256": "175095683a57bdbec7dc0fec59108bee5477f34fba12ef7bda32f23ca83f87db",
+    "published_sha256": "175095683a57bdbec7dc0fec59108bee5477f34fba12ef7bda32f23ca83f87db",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_green_017/vision_data/metadata.json": {
+    "original_sha256": "21e6ce826ad0507b8860ed639cd047f2a071075873e5794aa60910da55a5d1ac",
+    "published_sha256": "21e6ce826ad0507b8860ed639cd047f2a071075873e5794aa60910da55a5d1ac",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_green_017/vision_results/detections.json": {
+    "original_sha256": "0bacd9740a0527ea91b4ff986ae714ee3a56ff2303616fbd5aea49464fbb2f58",
+    "published_sha256": "0bacd9740a0527ea91b4ff986ae714ee3a56ff2303616fbd5aea49464fbb2f58",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_green_017/orchestration.json": {
+    "original_sha256": "1672454a8505a305cd0294d56aa16a6f252739c12b3c15eeef00fbceaf0ac5f6",
+    "published_sha256": "4cda4a94dfd00c2c89ecd151ab33dd59ca965383000c7e24e43be64ca16a49b6",
+    "transformation": "run_dir made repository-relative"
+  },
+  "experiments/verified/multi_green_017/camera_extrinsics.json": {
+    "original_sha256": "251a92b83e47249f58825af0195a93ef30175aa55f71bed579c6a358cfd93d99",
+    "published_sha256": "251a92b83e47249f58825af0195a93ef30175aa55f71bed579c6a358cfd93d99",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_green_017/controllers_used.yaml": {
+    "original_sha256": "d9743371e6af085e5efaf233d24cbfdfeb68abda80758844628e7d6bea0af3f9",
+    "published_sha256": "d9743371e6af085e5efaf233d24cbfdfeb68abda80758844628e7d6bea0af3f9",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_green_017/acceptance.json": {
+    "original_sha256": "89fc7e56c2b37bc0e9e95c1caf65a4cf19aa43f1fc49c6671ab6ac708a43364b",
+    "published_sha256": "89fc7e56c2b37bc0e9e95c1caf65a4cf19aa43f1fc49c6671ab6ac708a43364b",
+    "transformation": "none"
+  },
+  "experiments/verified/multi_green_017/manifest.json": {
+    "original_sha256": "1f67c1752d8a820a58ba22fa6576751f796a12af0d091014d68c083c990be897",
+    "published_sha256": "1f67c1752d8a820a58ba22fa6576751f796a12af0d091014d68c083c990be897",
+    "transformation": "none"
+  },
+  "experiments/failures/multi_green_011/task_result.json": {
+    "original_sha256": "deab68c9155e5c88908cef2b33cdbd4a3fdf92f47be1c25d97bd35e6127759ed",
+    "published_sha256": "deab68c9155e5c88908cef2b33cdbd4a3fdf92f47be1c25d97bd35e6127759ed",
+    "transformation": "none"
+  },
+  "experiments/failures/multi_green_011/scene_config.json": {
+    "original_sha256": "23d59297ac1563a797b01959b50f9503aa7f65bf829b37ed9adc0e5008cdaa19",
+    "published_sha256": "23d59297ac1563a797b01959b50f9503aa7f65bf829b37ed9adc0e5008cdaa19",
+    "transformation": "none"
+  },
+  "experiments/failures/multi_green_011/initial_state.json": {
+    "original_sha256": "64109b43a3e847d2b53458a388a19e5499e4843f9b7ea2e6dec3b29f78901536",
+    "published_sha256": "64109b43a3e847d2b53458a388a19e5499e4843f9b7ea2e6dec3b29f78901536",
+    "transformation": "none"
+  },
+  "experiments/failures/multi_green_011/vision_data/metadata.json": {
+    "original_sha256": "9942357997f47f069a036f9c81476748e0895e8f1ab8870f71ab1e7c4d1d8a41",
+    "published_sha256": "9942357997f47f069a036f9c81476748e0895e8f1ab8870f71ab1e7c4d1d8a41",
+    "transformation": "none"
+  },
+  "experiments/failures/multi_green_011/vision_results/detections.json": {
+    "original_sha256": "48140f48ca58e5bc6c262da8f588bdef78056739a4f394f936dab4de7af77657",
+    "published_sha256": "48140f48ca58e5bc6c262da8f588bdef78056739a4f394f936dab4de7af77657",
+    "transformation": "none"
+  },
+  "experiments/failures/multi_green_011/orchestration.json": {
+    "original_sha256": "b34026aaa9b0d0121bfa8eacc2d8f843e7b9b8736a4c35323debe08ee7b9a3f4",
+    "published_sha256": "8df6229acdca5cb51ab11daa11c5a435c0caf4fc3268c86afe3cb84915f99889",
+    "transformation": "run_dir made repository-relative"
+  },
+  "experiments/failures/multi_green_011/camera_extrinsics.json": {
+    "original_sha256": "a0195c11771ce0c6f45f8d64ee53275313cd32a4f28042075ed363a5fa4bdbbe",
+    "published_sha256": "a0195c11771ce0c6f45f8d64ee53275313cd32a4f28042075ed363a5fa4bdbbe",
+    "transformation": "none"
+  },
+  "experiments/failures/multi_green_011/controllers_used.yaml": {
+    "original_sha256": "cdcb846fa826967f2ba46735d565140a6888125f98791fec95f1c3335f6c0ea9",
+    "published_sha256": "cdcb846fa826967f2ba46735d565140a6888125f98791fec95f1c3335f6c0ea9",
+    "transformation": "none"
+  },
+  "experiments/failures/multi_green_012/task_result.json": {
+    "original_sha256": "6f348fbc8024efe0e38a0ef8d5f00d39121ea5f642084d6a93fb9b14a70d079a",
+    "published_sha256": "6f348fbc8024efe0e38a0ef8d5f00d39121ea5f642084d6a93fb9b14a70d079a",
+    "transformation": "none"
+  },
+  "experiments/failures/multi_green_012/scene_config.json": {
+    "original_sha256": "5944e2f9b364ef03ad24462a5f53803dd69b296aa9dac67195fe05ccffd047ef",
+    "published_sha256": "5944e2f9b364ef03ad24462a5f53803dd69b296aa9dac67195fe05ccffd047ef",
+    "transformation": "none"
+  },
+  "experiments/failures/multi_green_012/initial_state.json": {
+    "original_sha256": "caae6ff2db91e313405485bf07fe67a27873ad97026cb9d807373721c51b2aee",
+    "published_sha256": "caae6ff2db91e313405485bf07fe67a27873ad97026cb9d807373721c51b2aee",
+    "transformation": "none"
+  },
+  "experiments/failures/multi_green_012/vision_data/metadata.json": {
+    "original_sha256": "89e36b1bde17ab08cb514b6472dc7add529455db8f7f2b6babcfc0c9bd16309c",
+    "published_sha256": "89e36b1bde17ab08cb514b6472dc7add529455db8f7f2b6babcfc0c9bd16309c",
+    "transformation": "none"
+  },
+  "experiments/failures/multi_green_012/vision_results/detections.json": {
+    "original_sha256": "c761faff388f580c3737684e38af681cbad099df50f82ae1289666307a86904c",
+    "published_sha256": "c761faff388f580c3737684e38af681cbad099df50f82ae1289666307a86904c",
+    "transformation": "none"
+  },
+  "experiments/failures/multi_green_012/orchestration.json": {
+    "original_sha256": "125dcfb8d827a199cae99df23d9d5a1141b1f002d57488e2c5f9f59c6c091b74",
+    "published_sha256": "88a39d66062a9844c852693f996c2bbc84ce9291f907f3830c3b288a411a3252",
+    "transformation": "run_dir made repository-relative"
+  },
+  "experiments/failures/multi_green_012/camera_extrinsics.json": {
+    "original_sha256": "a0195c11771ce0c6f45f8d64ee53275313cd32a4f28042075ed363a5fa4bdbbe",
+    "published_sha256": "a0195c11771ce0c6f45f8d64ee53275313cd32a4f28042075ed363a5fa4bdbbe",
+    "transformation": "none"
+  },
+  "experiments/failures/multi_green_012/controllers_used.yaml": {
+    "original_sha256": "d9743371e6af085e5efaf233d24cbfdfeb68abda80758844628e7d6bea0af3f9",
+    "published_sha256": "d9743371e6af085e5efaf233d24cbfdfeb68abda80758844628e7d6bea0af3f9",
+    "transformation": "none"
+  }
+}

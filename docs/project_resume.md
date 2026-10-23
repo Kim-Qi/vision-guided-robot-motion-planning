@@ -1,3 +1,5 @@
+> Historical 120 mm pre-grasp notes. For the current physical multi-object pipeline, see [INTERVIEW_CODE_GUIDE.md](INTERVIEW_CODE_GUIDE.md) and [the README](../README.md).
+
 # Resume project phrasing (supported by source experiment)
 
 **基于 Isaac Sim、FoundationPose 与 ROS2/MoveIt2 的视觉引导机械臂运动规划系统**

@@ -1,0 +1,5 @@
+# CPU tests only; not an Isaac Sim / FoundationPose installer.
+numpy>=1.26,<3
+opencv-python>=4.8,<6
+trimesh>=4,<6
+Pillow>=10,<13

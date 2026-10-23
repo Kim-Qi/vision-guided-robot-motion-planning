@@ -1,0 +1,17 @@
+{
+  "experiment_id": "multi_blue_015",
+  "parent_frame": "world",
+  "child_frame": "camera_ros_frame",
+  "translation": [
+    1.2000000476837158,
+    0.800000011920929,
+    1.399999976158142
+  ],
+  "rotation_xyzw": [
+    0.2902765815510122,
+    0.8977049420350905,
+    -0.31538143160956,
+    -0.10197987960739002
+  ],
+  "source": "RGB-D observation camera at capture; optical axes"
+}

@@ -1,5 +1,13 @@
-# Evaluation plan
+# Actual experiment records
 
-**Currently there is ONE documented successful fixed-scene run. Do not claim multi-scene success yet.** Reported metrics: simulated object position error 1.414 mm, approx TCP 6.86 mm, downward axis error 0.77°, execution success; 77 motion trajectory points. No robust averages or rates available.
+`multi_object_summary.json` contains three verified same-runtime-version demonstrations and two retained failed examples. `verified/` and `failures/` include compact real metadata, state-machine events, estimated poses, actual measured errors, initial state, sanitized trace and source/config fingerprints. No raw RGB-D, model weights, caches or environments are included.
 
-For each independent trial change cube pose and re-export RGB-D, mask, known model geometry, camera calibration and simulation ground truth, **then rerun** FoundationPose and planning. Record run ID, seed, object GT/estimated XYZ, pose error, IK success, planning success, execution status, TF TCP XYZ/error, planning/execution time, video, and failure reason. Restore all collision objects and ensure no stale pre-grasp JSON before each new trial. Use `results_template.csv`; do not populate fabricated measurements.
+Original runtime source manifests refer to the frozen accepted runtime; `docs/ACCEPTED_CORE_SHA256.json` identifies unchanged core sources in this publication tree. `export_provenance.json` records original/published SHA256 values. The only JSON transformation is replacing the orchestration `run_dir` with its publication-relative path; video-probe filenames and textual runtime paths are also made portable. No measured coordinates, errors or task outcomes are changed.
+
+Full original physical telemetry is packaged separately in `pick_place_evidence.tar.gz` with the three videos as release assets. Their upload is pending authentication. Each compact run contains its original telemetry SHA256. Extract the evidence archive into the repository to independently run `evaluate_pick_place.py`; compact records alone do not pretend to contain missing telemetry.
+
+All three final targets were visually reviewed by the user. Each was the only selected target in a scene containing all three cubes; these are separate reset runs, not a continuous clearing sequence or a statistical 100% success-rate benchmark.
+
+Failures: green 011 stopped at TEST_LIFT after 14.6 mm relative slip; green 012 stopped at TRANSFER because actual TCP error 14.78 mm exceeded the 12 mm guard at place XY=(0.40,-0.30). Failed outcomes remain false. Bounds were not relaxed to turn those failures into successes.
+
+The original pre-grasp template/history remains available in Git history and `results_template.csv`; its metrics must not be mixed with 40 mm physical grasping.

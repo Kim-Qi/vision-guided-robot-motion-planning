@@ -1,0 +1,12 @@
+{
+  "elapsed_seconds": 116.34858720749617,
+  "exit_code": 0,
+  "ros_domain": 47,
+  "run_dir": "experiments/verified/multi_red_016",
+  "process_returncodes": [
+    0,
+    0,
+    0,
+    0
+  ]
+}

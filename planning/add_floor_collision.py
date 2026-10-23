@@ -1,3 +1,9 @@
+from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from experiment_io import ROOT, parse_experiment, load_metadata, support_box
+from scene_frames import static_transform_arguments
+
 import rclpy
 from rclpy.node import Node
 from moveit_msgs.srv import ApplyPlanningScene, GetPlanningScene
@@ -5,6 +11,8 @@ from moveit_msgs.msg import PlanningScene, CollisionObject, PlanningSceneCompone
 from shape_msgs.msg import SolidPrimitive
 from geometry_msgs.msg import Pose
 
+paths = parse_experiment("Add a MoveIt support box; not an Isaac physical collider")
+metadata = load_metadata(paths) if paths.root != ROOT else None
 rclpy.init()
 node = Node("add_floor_collision")
 
@@ -28,15 +36,24 @@ try:
 
     box = SolidPrimitive()
     box.type = SolidPrimitive.BOX
-    box.dimensions = [20.0, 20.0, 0.06]
+    if metadata is None:
+        box.dimensions = [20.0, 20.0, 0.06]  # unchanged legacy planning floor
+        support_transform = None
+    else:
+        box.dimensions, support_transform = support_box(metadata)
 
     pose = Pose()
     # Isaac Sim floor world center: (0, 0, -0.035)
-    # panda_link0 origin in world: (0, 0, 0)
     pose.position.x = 0.0
     pose.position.y = 0.0
     pose.position.z = -0.035
     pose.orientation.w = 1.0
+    if support_transform is not None:
+        pose.position.x, pose.position.y, pose.position.z = support_transform[:3, 3].tolist()
+        arguments = static_transform_arguments(support_transform, "panda_link0", "support")
+        values = dict(zip(arguments[::2], arguments[1::2]))
+        for axis in "xyzw":
+            setattr(pose.orientation, axis, float(values[f"--q{axis}"]))
 
     obj.primitives.append(box)
     obj.primitive_poses.append(pose)

@@ -1,0 +1,224 @@
+[
+  {
+    "topic": "项目架构与数据流",
+    "file": "planning/run_pick_place.py",
+    "symbol": "main",
+    "line": 45
+  },
+  {
+    "topic": "项目架构与数据流",
+    "file": "runtime_paths.py",
+    "symbol": "RuntimePaths.from_environment",
+    "line": 26
+  },
+  {
+    "topic": "项目架构与数据流",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.run",
+    "line": 300
+  },
+  {
+    "topic": "RGB-D 和相机内参",
+    "file": "simulation/multi_object_runtime.py",
+    "symbol": "MultiObjectRuntime.capture",
+    "line": 82
+  },
+  {
+    "topic": "RGB-D 和相机内参",
+    "file": "simulation/multi_object_runtime.py",
+    "symbol": "MultiObjectRuntime.update",
+    "line": 138
+  },
+  {
+    "topic": "RGB-D 和相机内参",
+    "file": "task_io.py",
+    "symbol": "validate_capture",
+    "line": 33
+  },
+  {
+    "topic": "多目标颜色分割",
+    "file": "vision/select_targets.py",
+    "symbol": "color_mask",
+    "line": 19
+  },
+  {
+    "topic": "多目标颜色分割",
+    "file": "vision/select_targets.py",
+    "symbol": "main",
+    "line": 36
+  },
+  {
+    "topic": "FoundationPose 6D 位姿估计",
+    "file": "vision/select_targets.py",
+    "symbol": "main",
+    "line": 36
+  },
+  {
+    "topic": "SE(3) 和坐标变换",
+    "file": "scene_frames.py",
+    "symbol": "rigid_transform",
+    "line": 15
+  },
+  {
+    "topic": "SE(3) 和坐标变换",
+    "file": "scene_frames.py",
+    "symbol": "camera_transform",
+    "line": 27
+  },
+  {
+    "topic": "SE(3) 和坐标变换",
+    "file": "scene_frames.py",
+    "symbol": "load_scene_frames",
+    "line": 45
+  },
+  {
+    "topic": "SE(3) 和坐标变换",
+    "file": "vision/verify_world_pose.py",
+    "symbol": "compute_object_poses",
+    "line": 16
+  },
+  {
+    "topic": "抓取 TCP 与姿态补偿",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.hand_target",
+    "line": 217
+  },
+  {
+    "topic": "抓取 TCP 与姿态补偿",
+    "file": "simulation/multi_object_runtime.py",
+    "symbol": "MultiObjectRuntime.state",
+    "line": 55
+  },
+  {
+    "topic": "IK 和 MoveIt2 运动规划",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.move_tcp",
+    "line": 225
+  },
+  {
+    "topic": "IK 和 MoveIt2 运动规划",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.action",
+    "line": 122
+  },
+  {
+    "topic": "IK 和 MoveIt2 运动规划",
+    "file": "planning/pick_place.launch.py",
+    "symbol": "generate_launch_description",
+    "line": 13
+  },
+  {
+    "topic": "ROS2 通信及夹爪控制",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.grip",
+    "line": 285
+  },
+  {
+    "topic": "ROS2 通信及夹爪控制",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.on_joints",
+    "line": 80
+  },
+  {
+    "topic": "ROS2 通信及夹爪控制",
+    "file": "planning/pick_place.launch.py",
+    "symbol": "generate_launch_description",
+    "line": 13
+  },
+  {
+    "topic": "物理抓取与碰撞管理",
+    "file": "simulation/pick_place_physics.py",
+    "symbol": "configure_physics",
+    "line": 52
+  },
+  {
+    "topic": "物理抓取与碰撞管理",
+    "file": "simulation/pick_place_physics.py",
+    "symbol": "StabilityMonitor.update",
+    "line": 77
+  },
+  {
+    "topic": "物理抓取与碰撞管理",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.contacts",
+    "line": 166
+  },
+  {
+    "topic": "物理抓取与碰撞管理",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.attach",
+    "line": 182
+  },
+  {
+    "topic": "物理抓取与碰撞管理",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.detach",
+    "line": 206
+  },
+  {
+    "topic": "Pick and Place 状态机",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.run",
+    "line": 300
+  },
+  {
+    "topic": "Pick and Place 状态机",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.state",
+    "line": 84
+  },
+  {
+    "topic": "Pick and Place 状态机",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.wait",
+    "line": 108
+  },
+  {
+    "topic": "Pick and Place 状态机",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "main",
+    "line": 389
+  },
+  {
+    "topic": "成功判定与误差计算",
+    "file": "evaluate_pick_place.py",
+    "symbol": "evaluate",
+    "line": 11
+  },
+  {
+    "topic": "成功判定与误差计算",
+    "file": "task_io.py",
+    "symbol": "relative_pose",
+    "line": 28
+  },
+  {
+    "topic": "成功判定与误差计算",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.observe_hold",
+    "line": 91
+  },
+  {
+    "topic": "实际技术问题及解决方案",
+    "file": "task_io.py",
+    "symbol": "validate_capture",
+    "line": 33
+  },
+  {
+    "topic": "实际技术问题及解决方案",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.attach",
+    "line": 182
+  },
+  {
+    "topic": "实际技术问题及解决方案",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.grip",
+    "line": 285
+  },
+  {
+    "topic": "实际技术问题及解决方案",
+    "file": "planning/pick_place_controller.py",
+    "symbol": "PickPlace.move_tcp",
+    "line": 225
+  }
+]

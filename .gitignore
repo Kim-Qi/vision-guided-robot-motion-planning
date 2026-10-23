@@ -21,3 +21,23 @@ backups/
 *.zip
 videos/
 !assets/
+
+# Deployment artifacts and private configuration
+build/
+install/
+log/
+.envs/
+*.mp4
+*.pth
+*.pt
+*.ckpt
+*.pem
+*.key
+*.bag
+*.db3
+experiments/*/
+!experiments/verified/
+!experiments/failures/
+vision_data/*.obj
+vision_data/*.json
+/vision_results/

@@ -1,4 +1,4 @@
-import os
+import sys
 import json
 from pathlib import Path
 
@@ -11,9 +11,13 @@ import nvdiffrast.torch as dr
 from estimater import FoundationPose, ScorePredictor, PoseRefinePredictor
 from Utils import set_logging_format, set_seed
 
-ROOT = Path(os.environ.get("ROBOT_PROJECT_ROOT", "/root/autodl-tmp/robot_vision_motion"))
-DATA = ROOT / "vision_data"
-OUT = ROOT / "vision_results"
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from experiment_io import parse_experiment, load_metadata, cube_corners, cube_size, validate_mesh_size
+paths = parse_experiment("Single-frame FoundationPose on one capture")
+metadata = load_metadata(paths)
+DATA = paths.data
+OUT = paths.results
 OUT.mkdir(parents=True, exist_ok=True)
 
 set_logging_format()
@@ -86,6 +90,7 @@ mesh.vertex_normals = np.asarray(
 
 assert isinstance(mesh, trimesh.Trimesh)
 assert len(mesh.vertices) > 0 and len(mesh.faces) > 0
+validate_mesh_size(mesh, metadata)
 
 print("Mesh bounds:", mesh.bounds, flush=True)
 print("Mesh faces:", len(mesh.faces), flush=True)
@@ -131,12 +136,7 @@ print(pose, flush=True)
 print("Translation (meters):", pose[:3, 3], flush=True)
 
 # 根据估计位姿，将 CAD 模型的八个角点投影回图像
-corners = np.array([
-    [x, y, z]
-    for x in [-0.06, 0.06]
-    for y in [-0.06, 0.06]
-    for z in [-0.06, 0.06]
-], dtype=np.float32)
+corners = cube_corners(cube_size(metadata))
 
 corners_cam = corners @ pose[:3, :3].T + pose[:3, 3]
 projection_valid = corners_cam[:, 2] > 0.001

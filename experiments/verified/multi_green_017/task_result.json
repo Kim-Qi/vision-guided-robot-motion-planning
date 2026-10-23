@@ -1,0 +1,112 @@
+{
+  "target": "green_cube",
+  "place_xy_base_m": [
+    0.4,
+    0.25
+  ],
+  "success": true,
+  "grasp_success": true,
+  "transport_success": true,
+  "place_success": true,
+  "failure_stage": null,
+  "failure_reason": null,
+  "foundationpose_position_errors_m": {
+    "red_cube": 0.0005432150828391398,
+    "blue_cube": 0.00011758990728054972,
+    "green_cube": 0.000852319019358099
+  },
+  "target_selection_correct": true,
+  "final_place_error_m": 0.003257790098366723,
+  "final_position_base_m": [
+    0.40093866229057307,
+    0.2468803671002388,
+    0.014999959990383616
+  ],
+  "final_speed_m_s": 0.00011015548217569457,
+  "final_tcp_separation_m": 0.1506284158502331,
+  "non_target_displacement_m": {
+    "red_cube": 0.0,
+    "blue_cube": 0.0
+  },
+  "maximum_relative_slip_m": 0.0013601806172725392,
+  "maximum_lift_m": 0.20954793319106102,
+  "task_seconds": 67.74271288886666,
+  "events": [
+    {
+      "state": "INIT",
+      "elapsed_s": 0.00029904022812843323,
+      "wall_time": 1792772670.763374
+    },
+    {
+      "state": "PERCEIVE",
+      "elapsed_s": 1.0258450210094452,
+      "wall_time": 1792772671.7889214
+    },
+    {
+      "state": "SELECT",
+      "elapsed_s": 1.026927888393402,
+      "wall_time": 1792772671.7900047,
+      "target": "green_cube"
+    },
+    {
+      "state": "OPEN",
+      "elapsed_s": 1.042544186115265,
+      "wall_time": 1792772671.805621
+    },
+    {
+      "state": "PREGRASP",
+      "elapsed_s": 3.250633120536804,
+      "wall_time": 1792772674.0137098
+    },
+    {
+      "state": "APPROACH",
+      "elapsed_s": 18.104495760053396,
+      "wall_time": 1792772688.867573
+    },
+    {
+      "state": "CLOSE",
+      "elapsed_s": 23.998372573405504,
+      "wall_time": 1792772694.7614496
+    },
+    {
+      "state": "TEST_LIFT",
+      "elapsed_s": 26.227574091404676,
+      "wall_time": 1792772696.990651
+    },
+    {
+      "state": "LIFT",
+      "elapsed_s": 30.81486188992858,
+      "wall_time": 1792772701.5779405
+    },
+    {
+      "state": "TRANSFER",
+      "elapsed_s": 36.55674220994115,
+      "wall_time": 1792772707.3198187
+    },
+    {
+      "state": "PLACE",
+      "elapsed_s": 47.289213828742504,
+      "wall_time": 1792772718.0522928
+    },
+    {
+      "state": "RELEASE",
+      "elapsed_s": 54.906251184642315,
+      "wall_time": 1792772725.669328
+    },
+    {
+      "state": "RETREAT",
+      "elapsed_s": 58.31128188967705,
+      "wall_time": 1792772729.074362
+    },
+    {
+      "state": "VERIFY",
+      "elapsed_s": 65.71360063180327,
+      "wall_time": 1792772736.4766781
+    },
+    {
+      "state": "SUCCESS",
+      "elapsed_s": 67.7422691360116,
+      "wall_time": 1792772738.505345
+    }
+  ]
+}

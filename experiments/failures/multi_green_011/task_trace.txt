@@ -1,0 +1,29 @@
+STATE {"state": "INIT", "elapsed_s": 0.0003292299807071686, "wall_time": 1792771746.9503317}
+STATE {"state": "PERCEIVE", "elapsed_s": 0.10705272853374481, "wall_time": 1792771747.0570557}
+STATE {"state": "SELECT", "elapsed_s": 0.10776246711611748, "wall_time": 1792771747.0577662, "target": "green_cube"}
+STATE {"state": "OPEN", "elapsed_s": 0.1173972450196743, "wall_time": 1792771747.0674002}
+GRIP 0.04 actual [0.03947514295578003, 0.03947516158223152] reached True stalled False
+STATE {"state": "PREGRASP", "elapsed_s": 2.086244773119688, "wall_time": 1792771749.0362475}
+TCP PREGRASP target [0.6797500907554109, 0.11923954203409565, 0.1652846929009307] actual [0.6783350943728161, 0.11913578999210739, 0.16219141926322897] error_m 0.003403134003631591
+STATE {"state": "APPROACH", "elapsed_s": 17.40287485346198, "wall_time": 1792771764.352879}
+CARTESIAN APPROACH fraction 1.0 code 1
+TCP APPROACH target [0.6797500907554109, 0.11923954203409565, 0.01728469290093071] actual [0.6778784060164701, 0.11890617796432981, 0.015271114055179308] error_m 0.0027692661723013223
+STATE {"state": "CLOSE", "elapsed_s": 22.90054114162922, "wall_time": 1792771769.850548}
+GRIP 0.017 actual [0.01998954266309738, 0.02005857601761818] reached True stalled False
+STATE {"state": "TEST_LIFT", "elapsed_s": 25.13407028466463, "wall_time": 1792771772.084074}
+CARTESIAN TEST_LIFT fraction 1.0 code 1
+STATE {"state": "FAILED", "elapsed_s": 28.105638407170773, "wall_time": 1792771775.055643, "reason": "Physical grip slipped 14.6 mm"}
+Traceback (most recent call last):
+  File "<RUNTIME_ROOT>/planning/pick_place_controller.py", line 396, in main
+    try:node.run()
+  File "<RUNTIME_ROOT>/planning/pick_place_controller.py", line 339, in run
+    self.move_tcp(grasp+[0,0,self.params["test_lift_m"]],True)
+  File "<RUNTIME_ROOT>/planning/pick_place_controller.py", line 243, in move_tcp
+    result=self.action(self.execute,goal)
+  File "<RUNTIME_ROOT>/planning/pick_place_controller.py", line 124, in action
+    result=self.wait(handle.get_result_async(),timeout)
+  File "<RUNTIME_ROOT>/planning/pick_place_controller.py", line 110, in wait
+    if self.holding:self.observe_hold()
+  File "<RUNTIME_ROOT>/planning/pick_place_controller.py", line 97, in observe_hold
+    raise RuntimeError(f"Physical grip slipped {slip*1000:.1f} mm")
+RuntimeError: Physical grip slipped 14.6 mm

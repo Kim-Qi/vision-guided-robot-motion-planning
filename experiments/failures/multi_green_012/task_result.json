@@ -1,0 +1,79 @@
+{
+  "target": "green_cube",
+  "place_xy_base_m": [
+    0.4,
+    -0.3
+  ],
+  "success": false,
+  "grasp_success": true,
+  "transport_success": false,
+  "place_success": false,
+  "failure_stage": "TRANSFER",
+  "failure_reason": "TCP tracking error 0.014781487126314675",
+  "foundationpose_position_errors_m": {
+    "red_cube": 0.0005405935158559651,
+    "blue_cube": 0.00011173483572172554,
+    "green_cube": 0.000836799256352564
+  },
+  "target_selection_correct": true,
+  "task_seconds": 48.38570540398359,
+  "events": [
+    {
+      "state": "INIT",
+      "elapsed_s": 0.00030978769063949585,
+      "wall_time": 1792771955.9011316
+    },
+    {
+      "state": "PERCEIVE",
+      "elapsed_s": 0.11729401722550392,
+      "wall_time": 1792771956.0181172
+    },
+    {
+      "state": "SELECT",
+      "elapsed_s": 0.11832912638783455,
+      "wall_time": 1792771956.0191524,
+      "target": "green_cube"
+    },
+    {
+      "state": "OPEN",
+      "elapsed_s": 0.1276249848306179,
+      "wall_time": 1792771956.0284474
+    },
+    {
+      "state": "PREGRASP",
+      "elapsed_s": 2.345155131071806,
+      "wall_time": 1792771958.2459784
+    },
+    {
+      "state": "APPROACH",
+      "elapsed_s": 17.74418568238616,
+      "wall_time": 1792771973.6450095
+    },
+    {
+      "state": "CLOSE",
+      "elapsed_s": 23.393277525901794,
+      "wall_time": 1792771979.2941003
+    },
+    {
+      "state": "TEST_LIFT",
+      "elapsed_s": 25.579881988465786,
+      "wall_time": 1792771981.4807055
+    },
+    {
+      "state": "LIFT",
+      "elapsed_s": 30.020995646715164,
+      "wall_time": 1792771985.9218209
+    },
+    {
+      "state": "TRANSFER",
+      "elapsed_s": 35.63073065876961,
+      "wall_time": 1792771991.531557
+    },
+    {
+      "state": "FAILED",
+      "elapsed_s": 48.38369599357247,
+      "wall_time": 1792772004.2845242,
+      "reason": "TCP tracking error 0.014781487126314675"
+    }
+  ]
+}

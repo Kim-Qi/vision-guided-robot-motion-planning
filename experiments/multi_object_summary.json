@@ -1,0 +1,619 @@
+{
+  "scope": "Three same-version selected-target simulation demonstrations, not a statistical success-rate benchmark",
+  "verified_runs": [
+    "multi_red_016",
+    "multi_blue_015",
+    "multi_green_017"
+  ],
+  "failed_examples": [
+    "multi_green_011",
+    "multi_green_012"
+  ],
+  "records": [
+    {
+      "run": "multi_red_016",
+      "path": "experiments/verified/multi_red_016",
+      "target": "red_cube",
+      "accepted": true,
+      "task_result": {
+        "target": "red_cube",
+        "place_xy_base_m": [
+          0.4,
+          0.25
+        ],
+        "success": true,
+        "grasp_success": true,
+        "transport_success": true,
+        "place_success": true,
+        "failure_stage": null,
+        "failure_reason": null,
+        "foundationpose_position_errors_m": {
+          "red_cube": 0.0004885551716396845,
+          "blue_cube": 0.00012529987837202122,
+          "green_cube": 0.0008358309673230982
+        },
+        "target_selection_correct": true,
+        "final_place_error_m": 0.0012076838139011624,
+        "final_position_base_m": [
+          0.3993981206417083,
+          0.24895298451185227,
+          0.014999956265093317
+        ],
+        "final_speed_m_s": 0.00010829889529716361,
+        "final_tcp_separation_m": 0.15066752447138676,
+        "non_target_displacement_m": {
+          "blue_cube": 9.313225746154785e-10,
+          "green_cube": 1.862645149230957e-09
+        },
+        "maximum_relative_slip_m": 0.00034000179756584056,
+        "maximum_lift_m": 0.19745616242289543,
+        "task_seconds": 63.30846489593387,
+        "events": [
+          {
+            "state": "INIT",
+            "elapsed_s": 0.0002962537109851837,
+            "wall_time": 1792772532.9616013
+          },
+          {
+            "state": "PERCEIVE",
+            "elapsed_s": 0.10949607193470001,
+            "wall_time": 1792772533.0708015
+          },
+          {
+            "state": "SELECT",
+            "elapsed_s": 0.11015581339597702,
+            "wall_time": 1792772533.0714614,
+            "target": "red_cube"
+          },
+          {
+            "state": "OPEN",
+            "elapsed_s": 1.0175373442471027,
+            "wall_time": 1792772533.978844
+          },
+          {
+            "state": "PREGRASP",
+            "elapsed_s": 3.1927973590791225,
+            "wall_time": 1792772536.154103
+          },
+          {
+            "state": "APPROACH",
+            "elapsed_s": 14.875051487237215,
+            "wall_time": 1792772547.8363578
+          },
+          {
+            "state": "CLOSE",
+            "elapsed_s": 22.024167448282242,
+            "wall_time": 1792772554.985476
+          },
+          {
+            "state": "TEST_LIFT",
+            "elapsed_s": 24.195526842027903,
+            "wall_time": 1792772557.156833
+          },
+          {
+            "state": "LIFT",
+            "elapsed_s": 28.894364900887012,
+            "wall_time": 1792772561.8556702
+          },
+          {
+            "state": "TRANSFER",
+            "elapsed_s": 35.3270161524415,
+            "wall_time": 1792772568.288322
+          },
+          {
+            "state": "PLACE",
+            "elapsed_s": 43.70199078693986,
+            "wall_time": 1792772576.663297
+          },
+          {
+            "state": "RELEASE",
+            "elapsed_s": 52.01409998163581,
+            "wall_time": 1792772584.9754066
+          },
+          {
+            "state": "RETREAT",
+            "elapsed_s": 54.861103277653456,
+            "wall_time": 1792772587.822413
+          },
+          {
+            "state": "VERIFY",
+            "elapsed_s": 61.30274971202016,
+            "wall_time": 1792772594.264056
+          },
+          {
+            "state": "SUCCESS",
+            "elapsed_s": 63.30773198232055,
+            "wall_time": 1792772596.2690384
+          }
+        ]
+      },
+      "independent_acceptance": {
+        "success": true,
+        "source": "Isaac dynamic-body telemetry; independent of planning attachment",
+        "target_selection_correct": true,
+        "target_position_error_m": 0.0004885551716396845,
+        "maximum_lift_m": 0.19745616521686316,
+        "maximum_relative_translation_slip_m": 0.0003391556452542485,
+        "maximum_relative_angle_rad": 0.003081586702345775,
+        "final_place_error_m": 0.001207698666908424,
+        "final_world_position_m": [
+          0.3993980884552002,
+          0.2489529848098755,
+          0.014999978244304657
+        ],
+        "final_support_bottom_error_m": 8.15592613792604e-08,
+        "final_max_speed_m_s": 0.00010942646470893685,
+        "final_position_drift_m": 5.3799499251083205e-08,
+        "tcp_object_separation_m": 0.15066917345504519,
+        "non_target_max_displacement_m": {
+          "blue_cube": 6.666604492132843e-08,
+          "green_cube": 7.044271788504229e-08
+        },
+        "holding_samples": 283,
+        "holding_duration_s": 27.616586446762085,
+        "final_stability_samples": 11,
+        "final_stability_span_s": 0.9893481731414795,
+        "task_seconds": 63.30846489593387
+      },
+      "video_uploaded": false
+    },
+    {
+      "run": "multi_blue_015",
+      "path": "experiments/verified/multi_blue_015",
+      "target": "blue_cube",
+      "accepted": true,
+      "task_result": {
+        "target": "blue_cube",
+        "place_xy_base_m": [
+          0.4,
+          0.25
+        ],
+        "success": true,
+        "grasp_success": true,
+        "transport_success": true,
+        "place_success": true,
+        "failure_stage": null,
+        "failure_reason": null,
+        "foundationpose_position_errors_m": {
+          "red_cube": 0.0005222343387120575,
+          "blue_cube": 0.00011434259990600535,
+          "green_cube": 0.0008317930702398975
+        },
+        "target_selection_correct": true,
+        "final_place_error_m": 0.0012171844579247774,
+        "final_position_base_m": [
+          0.40115407347679133,
+          0.2496131506562233,
+          0.014999951608480444
+        ],
+        "final_speed_m_s": 0.0001084088635120021,
+        "final_tcp_separation_m": 0.15081170513085065,
+        "non_target_displacement_m": {
+          "red_cube": 0.0,
+          "green_cube": 0.0
+        },
+        "maximum_relative_slip_m": 0.0016485120091374792,
+        "maximum_lift_m": 0.2126229666173458,
+        "task_seconds": 74.20235255360603,
+        "events": [
+          {
+            "state": "INIT",
+            "elapsed_s": 0.0003275163471698761,
+            "wall_time": 1792772394.2974906
+          },
+          {
+            "state": "PERCEIVE",
+            "elapsed_s": 0.11556997895240784,
+            "wall_time": 1792772394.4127345
+          },
+          {
+            "state": "SELECT",
+            "elapsed_s": 0.11662760749459267,
+            "wall_time": 1792772394.413792,
+            "target": "blue_cube"
+          },
+          {
+            "state": "OPEN",
+            "elapsed_s": 0.12992655485868454,
+            "wall_time": 1792772394.4270904
+          },
+          {
+            "state": "PREGRASP",
+            "elapsed_s": 2.335388455539942,
+            "wall_time": 1792772396.632553
+          },
+          {
+            "state": "APPROACH",
+            "elapsed_s": 20.252429399639368,
+            "wall_time": 1792772414.5495944
+          },
+          {
+            "state": "CLOSE",
+            "elapsed_s": 26.234235793352127,
+            "wall_time": 1792772420.5314
+          },
+          {
+            "state": "TEST_LIFT",
+            "elapsed_s": 28.462774645537138,
+            "wall_time": 1792772422.7599385
+          },
+          {
+            "state": "LIFT",
+            "elapsed_s": 33.04424372315407,
+            "wall_time": 1792772427.3414078
+          },
+          {
+            "state": "TRANSFER",
+            "elapsed_s": 38.73613624274731,
+            "wall_time": 1792772433.0333002
+          },
+          {
+            "state": "PLACE",
+            "elapsed_s": 52.34516264125705,
+            "wall_time": 1792772446.642327
+          },
+          {
+            "state": "RELEASE",
+            "elapsed_s": 61.50330139696598,
+            "wall_time": 1792772455.8004653
+          },
+          {
+            "state": "RETREAT",
+            "elapsed_s": 64.23492409661412,
+            "wall_time": 1792772458.5320885
+          },
+          {
+            "state": "VERIFY",
+            "elapsed_s": 72.19264370203018,
+            "wall_time": 1792772466.4898105
+          },
+          {
+            "state": "SUCCESS",
+            "elapsed_s": 74.20164036378264,
+            "wall_time": 1792772468.498805
+          }
+        ]
+      },
+      "independent_acceptance": {
+        "success": true,
+        "source": "Isaac dynamic-body telemetry; independent of planning attachment",
+        "target_selection_correct": true,
+        "target_position_error_m": 0.00011434259990600535,
+        "maximum_lift_m": 0.21262296847999096,
+        "maximum_relative_translation_slip_m": 0.001647069231128941,
+        "maximum_relative_angle_rad": 0.01914694297964716,
+        "final_place_error_m": 0.0012172079792930326,
+        "final_world_position_m": [
+          0.401154100894928,
+          0.24961316585540771,
+          0.014999974519014359
+        ],
+        "final_support_bottom_error_m": 8.898620572003746e-08,
+        "final_max_speed_m_s": 0.00010946205784714337,
+        "final_position_drift_m": 5.3799499251083205e-08,
+        "tcp_object_separation_m": 0.15081611125361924,
+        "non_target_max_displacement_m": {
+          "red_cube": 2.9933003112651774e-08,
+          "green_cube": 5.972094663188382e-08
+        },
+        "holding_samples": 307,
+        "holding_duration_s": 32.94917702674866,
+        "final_stability_samples": 13,
+        "final_stability_span_s": 0.9253418445587158,
+        "task_seconds": 74.20235255360603
+      },
+      "video_uploaded": false
+    },
+    {
+      "run": "multi_green_017",
+      "path": "experiments/verified/multi_green_017",
+      "target": "green_cube",
+      "accepted": true,
+      "task_result": {
+        "target": "green_cube",
+        "place_xy_base_m": [
+          0.4,
+          0.25
+        ],
+        "success": true,
+        "grasp_success": true,
+        "transport_success": true,
+        "place_success": true,
+        "failure_stage": null,
+        "failure_reason": null,
+        "foundationpose_position_errors_m": {
+          "red_cube": 0.0005432150828391398,
+          "blue_cube": 0.00011758990728054972,
+          "green_cube": 0.000852319019358099
+        },
+        "target_selection_correct": true,
+        "final_place_error_m": 0.003257790098366723,
+        "final_position_base_m": [
+          0.40093866229057307,
+          0.2468803671002388,
+          0.014999959990383616
+        ],
+        "final_speed_m_s": 0.00011015548217569457,
+        "final_tcp_separation_m": 0.1506284158502331,
+        "non_target_displacement_m": {
+          "red_cube": 0.0,
+          "blue_cube": 0.0
+        },
+        "maximum_relative_slip_m": 0.0013601806172725392,
+        "maximum_lift_m": 0.20954793319106102,
+        "task_seconds": 67.74271288886666,
+        "events": [
+          {
+            "state": "INIT",
+            "elapsed_s": 0.00029904022812843323,
+            "wall_time": 1792772670.763374
+          },
+          {
+            "state": "PERCEIVE",
+            "elapsed_s": 1.0258450210094452,
+            "wall_time": 1792772671.7889214
+          },
+          {
+            "state": "SELECT",
+            "elapsed_s": 1.026927888393402,
+            "wall_time": 1792772671.7900047,
+            "target": "green_cube"
+          },
+          {
+            "state": "OPEN",
+            "elapsed_s": 1.042544186115265,
+            "wall_time": 1792772671.805621
+          },
+          {
+            "state": "PREGRASP",
+            "elapsed_s": 3.250633120536804,
+            "wall_time": 1792772674.0137098
+          },
+          {
+            "state": "APPROACH",
+            "elapsed_s": 18.104495760053396,
+            "wall_time": 1792772688.867573
+          },
+          {
+            "state": "CLOSE",
+            "elapsed_s": 23.998372573405504,
+            "wall_time": 1792772694.7614496
+          },
+          {
+            "state": "TEST_LIFT",
+            "elapsed_s": 26.227574091404676,
+            "wall_time": 1792772696.990651
+          },
+          {
+            "state": "LIFT",
+            "elapsed_s": 30.81486188992858,
+            "wall_time": 1792772701.5779405
+          },
+          {
+            "state": "TRANSFER",
+            "elapsed_s": 36.55674220994115,
+            "wall_time": 1792772707.3198187
+          },
+          {
+            "state": "PLACE",
+            "elapsed_s": 47.289213828742504,
+            "wall_time": 1792772718.0522928
+          },
+          {
+            "state": "RELEASE",
+            "elapsed_s": 54.906251184642315,
+            "wall_time": 1792772725.669328
+          },
+          {
+            "state": "RETREAT",
+            "elapsed_s": 58.31128188967705,
+            "wall_time": 1792772729.074362
+          },
+          {
+            "state": "VERIFY",
+            "elapsed_s": 65.71360063180327,
+            "wall_time": 1792772736.4766781
+          },
+          {
+            "state": "SUCCESS",
+            "elapsed_s": 67.7422691360116,
+            "wall_time": 1792772738.505345
+          }
+        ]
+      },
+      "independent_acceptance": {
+        "success": true,
+        "source": "Isaac dynamic-body telemetry; independent of planning attachment",
+        "target_selection_correct": true,
+        "target_position_error_m": 0.000852319019358099,
+        "maximum_lift_m": 0.20954793225973845,
+        "maximum_relative_translation_slip_m": 0.0013603052178358637,
+        "maximum_relative_angle_rad": 0.01675410540340119,
+        "final_place_error_m": 0.0032577900983667236,
+        "final_world_position_m": [
+          0.40093865990638733,
+          0.24688036739826202,
+          0.014999981969594955
+        ],
+        "final_support_bottom_error_m": 7.495593845954773e-08,
+        "final_max_speed_m_s": 0.00011067824081218543,
+        "final_position_drift_m": 6.144611985685931e-08,
+        "tcp_object_separation_m": 0.15063167146664747,
+        "non_target_max_displacement_m": {
+          "red_cube": 7.459888009168501e-08,
+          "blue_cube": 6.666604492132843e-08
+        },
+        "holding_samples": 283,
+        "holding_duration_s": 28.528046369552612,
+        "final_stability_samples": 10,
+        "final_stability_span_s": 0.9355168342590332,
+        "task_seconds": 67.74271288886666
+      },
+      "video_uploaded": false
+    },
+    {
+      "run": "multi_green_011",
+      "path": "experiments/failures/multi_green_011",
+      "target": "green_cube",
+      "accepted": false,
+      "task_result": {
+        "target": "green_cube",
+        "place_xy_base_m": [
+          0.4,
+          -0.3
+        ],
+        "success": false,
+        "grasp_success": false,
+        "transport_success": false,
+        "place_success": false,
+        "failure_stage": "TEST_LIFT",
+        "failure_reason": "Physical grip slipped 14.6 mm",
+        "foundationpose_position_errors_m": {
+          "red_cube": 0.0005328012871629936,
+          "blue_cube": 0.00011479886531473243,
+          "green_cube": 0.0008498019387780499
+        },
+        "target_selection_correct": true,
+        "task_seconds": 28.107543122023344,
+        "events": [
+          {
+            "state": "INIT",
+            "elapsed_s": 0.0003292299807071686,
+            "wall_time": 1792771746.9503317
+          },
+          {
+            "state": "PERCEIVE",
+            "elapsed_s": 0.10705272853374481,
+            "wall_time": 1792771747.0570557
+          },
+          {
+            "state": "SELECT",
+            "elapsed_s": 0.10776246711611748,
+            "wall_time": 1792771747.0577662,
+            "target": "green_cube"
+          },
+          {
+            "state": "OPEN",
+            "elapsed_s": 0.1173972450196743,
+            "wall_time": 1792771747.0674002
+          },
+          {
+            "state": "PREGRASP",
+            "elapsed_s": 2.086244773119688,
+            "wall_time": 1792771749.0362475
+          },
+          {
+            "state": "APPROACH",
+            "elapsed_s": 17.40287485346198,
+            "wall_time": 1792771764.352879
+          },
+          {
+            "state": "CLOSE",
+            "elapsed_s": 22.90054114162922,
+            "wall_time": 1792771769.850548
+          },
+          {
+            "state": "TEST_LIFT",
+            "elapsed_s": 25.13407028466463,
+            "wall_time": 1792771772.084074
+          },
+          {
+            "state": "FAILED",
+            "elapsed_s": 28.105638407170773,
+            "wall_time": 1792771775.055643,
+            "reason": "Physical grip slipped 14.6 mm"
+          }
+        ]
+      },
+      "independent_acceptance": null,
+      "video_uploaded": false
+    },
+    {
+      "run": "multi_green_012",
+      "path": "experiments/failures/multi_green_012",
+      "target": "green_cube",
+      "accepted": false,
+      "task_result": {
+        "target": "green_cube",
+        "place_xy_base_m": [
+          0.4,
+          -0.3
+        ],
+        "success": false,
+        "grasp_success": true,
+        "transport_success": false,
+        "place_success": false,
+        "failure_stage": "TRANSFER",
+        "failure_reason": "TCP tracking error 0.014781487126314675",
+        "foundationpose_position_errors_m": {
+          "red_cube": 0.0005405935158559651,
+          "blue_cube": 0.00011173483572172554,
+          "green_cube": 0.000836799256352564
+        },
+        "target_selection_correct": true,
+        "task_seconds": 48.38570540398359,
+        "events": [
+          {
+            "state": "INIT",
+            "elapsed_s": 0.00030978769063949585,
+            "wall_time": 1792771955.9011316
+          },
+          {
+            "state": "PERCEIVE",
+            "elapsed_s": 0.11729401722550392,
+            "wall_time": 1792771956.0181172
+          },
+          {
+            "state": "SELECT",
+            "elapsed_s": 0.11832912638783455,
+            "wall_time": 1792771956.0191524,
+            "target": "green_cube"
+          },
+          {
+            "state": "OPEN",
+            "elapsed_s": 0.1276249848306179,
+            "wall_time": 1792771956.0284474
+          },
+          {
+            "state": "PREGRASP",
+            "elapsed_s": 2.345155131071806,
+            "wall_time": 1792771958.2459784
+          },
+          {
+            "state": "APPROACH",
+            "elapsed_s": 17.74418568238616,
+            "wall_time": 1792771973.6450095
+          },
+          {
+            "state": "CLOSE",
+            "elapsed_s": 23.393277525901794,
+            "wall_time": 1792771979.2941003
+          },
+          {
+            "state": "TEST_LIFT",
+            "elapsed_s": 25.579881988465786,
+            "wall_time": 1792771981.4807055
+          },
+          {
+            "state": "LIFT",
+            "elapsed_s": 30.020995646715164,
+            "wall_time": 1792771985.9218209
+          },
+          {
+            "state": "TRANSFER",
+            "elapsed_s": 35.63073065876961,
+            "wall_time": 1792771991.531557
+          },
+          {
+            "state": "FAILED",
+            "elapsed_s": 48.38369599357247,
+            "wall_time": 1792772004.2845242,
+            "reason": "TCP tracking error 0.014781487126314675"
+          }
+        ]
+      },
+      "independent_acceptance": null,
+      "video_uploaded": false
+    }
+  ]
+}

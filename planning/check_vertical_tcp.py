@@ -6,7 +6,7 @@ import rclpy
 from rclpy.node import Node
 from tf2_ros import Buffer, TransformListener
 
-TARGET = tuple(json.loads((Path(os.environ.get("ROBOT_PROJECT_ROOT", "/root/autodl-tmp/robot_vision_motion")) / "vision_results/pregrasp_target.json").read_text())["pregrasp_position_m"])
+TARGET = tuple(json.loads((Path(os.environ.get("ROBOT_PROJECT_ROOT", str(Path(__file__).resolve().parents[1]))) / "vision_results/pregrasp_target.json").read_text())["pregrasp_position_m"])
 OFFSET = 0.0584
 
 rclpy.init()
