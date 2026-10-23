@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -o pipefail
 
-BASE=${ROBOT_PROJECT_ROOT:-/root/autodl-tmp/robot_vision_motion}
+BASE="${ROBOT_PROJECT_ROOT:-$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)}"
 VIDEO="$BASE/videos"
 SIMLOG="$BASE/vision.log"
 PLAN="$BASE/planning/execute_vertical_pregrasp.py"
@@ -13,9 +13,9 @@ OUTPUT="$VIDEO/franka_moveit_showcase.mp4"
 BACKUP="$VIDEO/first_pregrasp_showcase.mp4"
 FINAL="$VIDEO/foundationpose_vertical_pregrasp.mp4"
 
-source /opt/ros/humble/setup.bash
-source "$BASE/third_party/IsaacSim_ros_5.1/humble_ws/install/setup.bash"
-export ROS_DOMAIN_ID=0
+source "${ROS_SETUP:-/opt/ros/humble/setup.bash}"
+source "${ISAAC_ROS_WS:-$BASE/third_party/IsaacSim_ros_5.1/humble_ws}/install/setup.bash"
+export ROS_DOMAIN_ID="${ROS_DOMAIN_ID:-0}"
 
 # 保留第一版视频
 if [ -f "$OUTPUT" ] && [ ! -f "$BACKUP" ]; then
@@ -54,7 +54,7 @@ echo "VIDEO: Recording trigger accepted"
 sleep 3
 
 echo "ROBOT: Executing vertical pregrasp..."
-/usr/bin/python3 "$PLAN" --execute 2>&1 | tee "$RUNLOG"
+"${ROS_PYTHON:-/usr/bin/python3}" "$PLAN" --execute 2>&1 | tee "$RUNLOG"
 result=${PIPESTATUS[0]}
 
 echo "ROBOT: Exit code = $result"

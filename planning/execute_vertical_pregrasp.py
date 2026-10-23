@@ -95,7 +95,7 @@ class IKPlanner(Node):
         import json
         from pathlib import Path
 
-        target_file = Path(os.environ.get("ROBOT_PROJECT_ROOT", "/root/autodl-tmp/robot_vision_motion")) / "vision_results/pregrasp_target.json"
+        target_file = Path(os.environ.get("ROBOT_PROJECT_ROOT", str(Path(__file__).resolve().parents[1]))) / "vision_results/pregrasp_target.json"
 
         with target_file.open() as f:
             target_data = json.load(f)

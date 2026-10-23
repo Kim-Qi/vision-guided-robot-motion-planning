@@ -1,0 +1,102 @@
+{
+  "observed_environment": "Accepted AutoDL simulation setup; external source git metadata absent where explicitly marked unknown",
+  "dependencies": [
+    {
+      "name": "Isaac Sim",
+      "version": "5.1.0.0",
+      "source": "https://github.com/isaac-sim/IsaacSim",
+      "license": "NVIDIA proprietary software; installed wheel metadata / applicable NVIDIA terms"
+    },
+    {
+      "name": "IsaacSim ROS workspaces",
+      "version": "Isaac Sim 5.1 workspace source archive; exact git revision unknown",
+      "source": "https://github.com/isaac-sim/IsaacSim-ros_workspaces",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "FoundationPose",
+      "version": "Source revision unknown; fingerprinted estimater.py and patched Utils.py below",
+      "source": "https://github.com/NVlabs/FoundationPose",
+      "license": "NVIDIA custom source license; see licenses/FoundationPose-LICENSE.txt"
+    },
+    {
+      "name": "ROS2 rclpy",
+      "version": "Humble / rclpy 3.3.22",
+      "source": "https://github.com/ros2/rclpy",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "MoveIt2 move_group",
+      "version": "2.5.10",
+      "source": "https://github.com/moveit/moveit2",
+      "license": "BSD (installed package declaration; components retain own notices)"
+    },
+    {
+      "name": "OMPL",
+      "version": "1.7.0",
+      "source": "https://github.com/ompl/ompl",
+      "license": "BSD"
+    },
+    {
+      "name": "ros2_controllers",
+      "version": "2.54.1",
+      "source": "https://github.com/ros-controls/ros2_controllers",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "PyTorch",
+      "version": "2.5.1+cu118",
+      "source": "https://github.com/pytorch/pytorch",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "torchvision",
+      "version": "0.20.1+cu118",
+      "source": "https://github.com/pytorch/vision",
+      "license": "BSD"
+    },
+    {
+      "name": "PyTorch3D",
+      "version": "0.7.9",
+      "source": "https://github.com/facebookresearch/pytorch3d",
+      "license": "BSD-3-Clause; review upstream component notices"
+    },
+    {
+      "name": "nvdiffrast",
+      "version": "0.4.0",
+      "source": "https://github.com/NVlabs/nvdiffrast",
+      "license": "NVIDIA custom license; review upstream LICENSE"
+    },
+    {
+      "name": "NumPy",
+      "version": "2.4.6",
+      "source": "https://github.com/numpy/numpy",
+      "license": "BSD-3-Clause plus bundled component notices"
+    },
+    {
+      "name": "opencv-python",
+      "version": "5.0.0.93",
+      "source": "https://github.com/opencv/opencv-python",
+      "license": "Apache-2.0; bundled component notices apply"
+    },
+    {
+      "name": "trimesh",
+      "version": "5.1.1",
+      "source": "https://github.com/mikedh/trimesh",
+      "license": "MIT"
+    },
+    {
+      "name": "Pillow",
+      "version": "12.3.0",
+      "source": "https://github.com/python-pillow/Pillow",
+      "license": "MIT-CMU"
+    }
+  ],
+  "upstream_fingerprints": {
+    "third_party/FoundationPose/estimater.py": "73a40474d11ab9d9dc873e101b5eef370c0bd78f2874ab1b5148dac402496ad0",
+    "third_party/FoundationPose/Utils.py": "8accc8abe917267fb2086893154c263383462ef9c45f69ae142c0dc3bc74a49a",
+    "third_party/FoundationPose/LICENSE": "0de51abc6b73e24724858239efc42cfeada5d9e7c911cf7eff077bd9a23dec62",
+    "third_party/IsaacSim_ros_5.1/LICENSE": "eba78e4c1a07ee0cf1117069a653bdcba2a0b9ce988d94cb3cc6432083e1251a",
+    "third_party/IsaacSim_ros_5.1/README.md": "6e5bc22dd45e1d7b5c5a13edf0fb1fec4262d13598202c6cfc6e9227038600df"
+  }
+}

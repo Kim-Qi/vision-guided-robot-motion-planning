@@ -1,0 +1,12 @@
+{
+  "elapsed_seconds": 81.39064235985279,
+  "exit_code": 1,
+  "ros_domain": 47,
+  "run_dir": "experiments/failures/multi_green_011",
+  "process_returncodes": [
+    0,
+    0,
+    0,
+    1
+  ]
+}

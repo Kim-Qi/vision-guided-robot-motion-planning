@@ -1,3 +1,5 @@
+> Historical 120 mm pre-grasp notes. For the current physical multi-object pipeline, see [INTERVIEW_CODE_GUIDE.md](INTERVIEW_CODE_GUIDE.md) and [the README](../README.md).
+
 # Interview notes / 面试知识点
 
 **Q1: 项目要解决什么问题？** A: 单帧 RGB-D 数据估计已知 CAD 物体的 6D 位姿，将其转换到机器人基座坐标系，并在有障碍物的 MoveIt2 场景中规划到预抓取位置，由 ROS2 驱动 Isaac Sim Panda 执行。

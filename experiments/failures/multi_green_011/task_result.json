@@ -1,0 +1,69 @@
+{
+  "target": "green_cube",
+  "place_xy_base_m": [
+    0.4,
+    -0.3
+  ],
+  "success": false,
+  "grasp_success": false,
+  "transport_success": false,
+  "place_success": false,
+  "failure_stage": "TEST_LIFT",
+  "failure_reason": "Physical grip slipped 14.6 mm",
+  "foundationpose_position_errors_m": {
+    "red_cube": 0.0005328012871629936,
+    "blue_cube": 0.00011479886531473243,
+    "green_cube": 0.0008498019387780499
+  },
+  "target_selection_correct": true,
+  "task_seconds": 28.107543122023344,
+  "events": [
+    {
+      "state": "INIT",
+      "elapsed_s": 0.0003292299807071686,
+      "wall_time": 1792771746.9503317
+    },
+    {
+      "state": "PERCEIVE",
+      "elapsed_s": 0.10705272853374481,
+      "wall_time": 1792771747.0570557
+    },
+    {
+      "state": "SELECT",
+      "elapsed_s": 0.10776246711611748,
+      "wall_time": 1792771747.0577662,
+      "target": "green_cube"
+    },
+    {
+      "state": "OPEN",
+      "elapsed_s": 0.1173972450196743,
+      "wall_time": 1792771747.0674002
+    },
+    {
+      "state": "PREGRASP",
+      "elapsed_s": 2.086244773119688,
+      "wall_time": 1792771749.0362475
+    },
+    {
+      "state": "APPROACH",
+      "elapsed_s": 17.40287485346198,
+      "wall_time": 1792771764.352879
+    },
+    {
+      "state": "CLOSE",
+      "elapsed_s": 22.90054114162922,
+      "wall_time": 1792771769.850548
+    },
+    {
+      "state": "TEST_LIFT",
+      "elapsed_s": 25.13407028466463,
+      "wall_time": 1792771772.084074
+    },
+    {
+      "state": "FAILED",
+      "elapsed_s": 28.105638407170773,
+      "wall_time": 1792771775.055643,
+      "reason": "Physical grip slipped 14.6 mm"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "world_frame": "world",
+  "robot_base_frame": "panda_link0",
+  "camera_frame": "camera_ros_frame",
+  "camera_axes": "ros",
+  "robot_base_prim": "/Franka/panda_link0",
+  "robot_base_transform_world": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      -2.38418573772492e-09
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      2.98023217215615e-10
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      2.384185648907078e-08
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "base_transform_source": "USD ComputeLocalToWorldTransform at RGB-D capture",
+  "resolution": [
+    640,
+    480
+  ],
+  "depth_unit": "meters",
+  "depth_type": "distance_to_image_plane",
+  "intrinsics": [
+    [
+      5497.49462890625,
+      0.0,
+      320.0
+    ],
+    [
+      0.0,
+      5497.49462890625,
+      240.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_position_world": [
+    1.75,
+    1.149999976158142,
+    1.4500000476837158
+  ],
+  "camera_rotation_wxyz": [
+    -0.1487565339562883,
+    0.2872449161459089,
+    0.8402463203081403,
+    -0.43514132527521593
+  ],
+  "target_position_world": [
+    0.55,
+    -0.4,
+    0.065
+  ],
+  "target_size_m": 0.12
+}

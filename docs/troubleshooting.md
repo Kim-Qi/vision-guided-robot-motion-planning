@@ -1,3 +1,5 @@
+> Historical 120 mm pre-grasp notes. For the current physical multi-object pipeline, see [INTERVIEW_CODE_GUIDE.md](INTERVIEW_CODE_GUIDE.md) and [the README](../README.md).
+
 # Troubleshooting / 故障排查
 
 | Symptom | Cause / check | Fix |

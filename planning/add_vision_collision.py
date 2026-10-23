@@ -1,6 +1,7 @@
-import os
 import json
 from pathlib import Path
+import sys
+import numpy as np
 
 import rclpy
 from rclpy.node import Node
@@ -15,13 +16,16 @@ from shape_msgs.msg import SolidPrimitive
 from geometry_msgs.msg import Pose
 
 
-ROOT = Path(os.environ.get("ROBOT_PROJECT_ROOT", "/root/autodl-tmp/robot_vision_motion"))
-TARGET = ROOT / "vision_results/pregrasp_target.json"
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from experiment_io import parse_experiment, load_metadata, cube_size
+from scene_frames import static_transform_arguments
 
 
 class VisionCollision(Node):
-    def __init__(self):
+    def __init__(self, paths):
         super().__init__("vision_collision_scene")
+        self.paths = paths
         self.apply_client = self.create_client(
             ApplyPlanningScene, "/apply_planning_scene"
         )
@@ -47,7 +51,11 @@ class VisionCollision(Node):
         return future.result()
 
     def run(self):
-        data = json.loads(TARGET.read_text())
+        metadata = load_metadata(self.paths)
+        data = json.loads((self.paths.results / "pregrasp_target.json").read_text())
+        size = cube_size(metadata)
+        if "target_size_m" in data and not np.isclose(data["target_size_m"], size):
+            raise ValueError("Target size differs from capture metadata")
         xyz = data["object_center_m"]
 
         assert data["frame_id"] == "panda_link0"
@@ -60,13 +68,22 @@ class VisionCollision(Node):
 
         box = SolidPrimitive()
         box.type = SolidPrimitive.BOX
-        box.dimensions = [0.12, 0.12, 0.12]
+        box.dimensions = [size] * 3
 
         pose = Pose()
         pose.position.x = float(xyz[0])
         pose.position.y = float(xyz[1])
         pose.position.z = float(xyz[2])
-        pose.orientation.w = 1.0
+        if self.paths.root == ROOT:
+            pose.orientation.w = 1.0  # preserve the validated legacy box convention
+        else:
+            transform = np.load(self.paths.results / "object_pose_panda_link0.npy", allow_pickle=False)
+            if not np.allclose(transform[:3, 3], xyz, atol=1e-8, rtol=0):
+                raise ValueError("Target and estimated object pose do not match")
+            arguments = static_transform_arguments(transform, "panda_link0", "object")
+            values = dict(zip(arguments[::2], arguments[1::2]))
+            for axis in "xyzw":
+                setattr(pose.orientation, axis, float(values[f"--q{axis}"]))
 
         obj.primitives.append(box)
         obj.primitive_poses.append(pose)
@@ -121,8 +138,10 @@ class VisionCollision(Node):
 
 
 def main():
+    paths = parse_experiment("Add a capture-sized MoveIt collision cube; does not move robot")
+    load_metadata(paths)
     rclpy.init()
-    node = VisionCollision()
+    node = VisionCollision(paths)
     try:
         node.run()
     finally:

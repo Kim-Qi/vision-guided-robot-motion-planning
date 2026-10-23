@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "source": "Isaac dynamic-body telemetry; independent of planning attachment",
+  "target_selection_correct": true,
+  "target_position_error_m": 0.0004885551716396845,
+  "maximum_lift_m": 0.19745616521686316,
+  "maximum_relative_translation_slip_m": 0.0003391556452542485,
+  "maximum_relative_angle_rad": 0.003081586702345775,
+  "final_place_error_m": 0.001207698666908424,
+  "final_world_position_m": [
+    0.3993980884552002,
+    0.2489529848098755,
+    0.014999978244304657
+  ],
+  "final_support_bottom_error_m": 8.15592613792604e-08,
+  "final_max_speed_m_s": 0.00010942646470893685,
+  "final_position_drift_m": 5.3799499251083205e-08,
+  "tcp_object_separation_m": 0.15066917345504519,
+  "non_target_max_displacement_m": {
+    "blue_cube": 6.666604492132843e-08,
+    "green_cube": 7.044271788504229e-08
+  },
+  "holding_samples": 283,
+  "holding_duration_s": 27.616586446762085,
+  "final_stability_samples": 11,
+  "final_stability_span_s": 0.9893481731414795,
+  "task_seconds": 63.30846489593387
+}

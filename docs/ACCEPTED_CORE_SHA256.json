@@ -1,0 +1,18 @@
+{
+  "scope": "Byte-identical accepted simulation, perception, coordinate, planning/control, configuration and acceptance sources. Deployment adapter and relocated legacy launches are separately CPU checked; no new GPU run of the publication tree.",
+  "files": {
+    "simulation/run_franka_vision.py": "8ab947235a2eea87cd2a9aae45b22cbb6f20c63027044cb63aa00d273b29a68b",
+    "simulation/pick_place_physics.py": "e132d978699affb162f56b218cc275a612457f567651055857509b3007d65e8e",
+    "simulation/multi_object_runtime.py": "62f537faee432a78f46d01ba615cadf0bb5903c276fffa4a987cdee3982403b6",
+    "planning/pick_place_controller.py": "cf4c0fb32a1eff4ffba1c52940d9caf50c1b3cc426bf4bfe5d687ea83ef589bf",
+    "planning/pick_place.launch.py": "2054e92c4a6f936abf67dbb3b9053a92992249abb536ab2e9478232beefe008c",
+    "vision/select_targets.py": "ec4e44091f6d5c0f3fdaffeeccff5dc05769f114284cbae5bdcccb668ba3f332",
+    "scene_frames.py": "f6ccd2ae806402dc3ecd573570b1db21202b2d1b1033752935c23e94caa5cc4d",
+    "experiment_io.py": "8dfc85084c77e6b2844335e55cd2c86144d4b157e29c1cb5eb466402656e8a05",
+    "task_io.py": "38a9c5ba64aae86374a43342f8598ed1ebded9f9fa3525549dc1ddde4e7fd606",
+    "evaluate_pick_place.py": "af50d4e50c88bf7e68bc3ce863762c1737f0ab60da5b0aa968e379a38aee3256",
+    "configs/multi_object_pick_place.json": "dfa9c8d3fca4103cdbe691fdad0b4f89fa568220ea5e6eadc4eee2ddc56a0e38",
+    "configs/pick_place_controllers.yaml": "d9743371e6af085e5efaf233d24cbfdfeb68abda80758844628e7d6bea0af3f9",
+    "configs/pick_place.urdf.xacro": "aeaf5ee91c140faf66d0bc76ffbac968a62cbd5a9aad76118fefc645365f2924"
+  }
+}

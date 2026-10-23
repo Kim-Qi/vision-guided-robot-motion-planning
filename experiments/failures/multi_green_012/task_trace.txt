@@ -1,0 +1,29 @@
+STATE {"state": "INIT", "elapsed_s": 0.00030978769063949585, "wall_time": 1792771955.9011316}
+STATE {"state": "PERCEIVE", "elapsed_s": 0.11729401722550392, "wall_time": 1792771956.0181172}
+STATE {"state": "SELECT", "elapsed_s": 0.11832912638783455, "wall_time": 1792771956.0191524, "target": "green_cube"}
+STATE {"state": "OPEN", "elapsed_s": 0.1276249848306179, "wall_time": 1792771956.0284474}
+GRIP 0.04 actual [0.03970722109079361, 0.039707232266664505] reached False stalled True
+STATE {"state": "PREGRASP", "elapsed_s": 2.345155131071806, "wall_time": 1792771958.2459784}
+TCP PREGRASP target [0.6797578518706319, 0.11924978872276443, 0.1652800448502881] actual [0.6784606805139354, 0.11826166994418755, 0.16236639968932437] error_m 0.0033389160476444252
+STATE {"state": "APPROACH", "elapsed_s": 17.74418568238616, "wall_time": 1792771973.6450095}
+CARTESIAN APPROACH fraction 1.0 code 1
+TCP APPROACH target [0.6797578518706319, 0.11924978872276443, 0.017280044850288112] actual [0.6778781996162954, 0.11891278242949724, 0.014697045177981982] error_m 0.0032122504799700123
+STATE {"state": "CLOSE", "elapsed_s": 23.393277525901794, "wall_time": 1792771979.2941003}
+GRIP 0.0 actual [0.019886085763573647, 0.020126648247241974] reached False stalled True
+STATE {"state": "TEST_LIFT", "elapsed_s": 25.579881988465786, "wall_time": 1792771981.4807055}
+CARTESIAN TEST_LIFT fraction 1.0 code 1
+TCP TEST_LIFT target [0.6797578518706319, 0.11924978872276443, 0.05728004485028811] actual [0.6780974137329193, 0.11657072377145607, 0.05266810903098003] error_m 0.005586089493009946
+STATE {"state": "LIFT", "elapsed_s": 30.020995646715164, "wall_time": 1792771985.9218209}
+CARTESIAN LIFT fraction 1.0 code 1
+TCP LIFT target [0.6797578518706319, 0.11924978872276443, 0.215] actual [0.6794177686158342, 0.11422486353780475, 0.2093884366518367] error_m 0.007540236928975464
+STATE {"state": "TRANSFER", "elapsed_s": 35.63073065876961, "wall_time": 1792771991.531557}
+TCP TRANSFER target [0.4, -0.3, 0.215] actual [0.40930380840119884, -0.28853875320408495, 0.2142441344151795] error_m 0.014781487126314675
+STATE {"state": "FAILED", "elapsed_s": 48.38369599357247, "wall_time": 1792772004.2845242, "reason": "TCP tracking error 0.014781487126314675"}
+Traceback (most recent call last):
+  File "<RUNTIME_ROOT>/planning/pick_place_controller.py", line 396, in main
+    try:node.run()
+  File "<RUNTIME_ROOT>/planning/pick_place_controller.py", line 348, in run
+    self.move_tcp([self.args.place_x,self.args.place_y,safe_z])
+  File "<RUNTIME_ROOT>/planning/pick_place_controller.py", line 280, in move_tcp
+    if error>0.012:raise RuntimeError(f"TCP tracking error {error}")
+RuntimeError: TCP tracking error 0.014781487126314675

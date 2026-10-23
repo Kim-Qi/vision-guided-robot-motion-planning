@@ -1,10 +1,14 @@
-import os
 from pathlib import Path
+import sys
 import numpy as np
 from PIL import Image
 import trimesh
 
-root = Path("/root/autodl-tmp/robot_vision_motion/vision_data")
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from experiment_io import parse_experiment, load_metadata, cube_size
+paths = parse_experiment("Prepare red cube mask and CAD from capture metadata")
+metadata = load_metadata(paths)
+root = paths.data
 
 rgb = np.asarray(Image.open(root / "rgb.png").convert("RGB"))
 
@@ -24,7 +28,7 @@ Image.fromarray((mask * 255).astype(np.uint8)).save(
 )
 
 # 与仿真目标尺寸一致，中心位于物体局部原点
-mesh = trimesh.creation.box(extents=[0.12, 0.12, 0.12])
+mesh = trimesh.creation.box(extents=[cube_size(metadata)] * 3)
 mesh.export(root / "object.obj")
 
 print("MASK pixels:", int(mask.sum()))

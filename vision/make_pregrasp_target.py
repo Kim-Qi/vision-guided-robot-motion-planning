@@ -1,34 +1,17 @@
-import os
 import json
 from pathlib import Path
+import sys
 import numpy as np
 
-root = Path(os.environ.get("ROBOT_PROJECT_ROOT", "/root/autodl-tmp/robot_vision_motion"))
-out = root / "vision_results"
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from experiment_io import parse_experiment, load_metadata, build_pregrasp
 
-T = np.load(out / "object_pose_panda_link0.npy")
-assert T.shape == (4, 4)
-assert np.isfinite(T).all()
-
-center = T[:3, 3].copy()
-
-# 物体顶部上方 12 cm；暂不使用对称立方体的不确定朝向
-cube_size = 0.12
-clearance = 0.12
-target = center + [0.0, 0.0, cube_size / 2 + clearance]
-
-result = {
-    "frame_id": "panda_link0",
-    "source": "FoundationPose object position",
-    "object_center_m": center.tolist(),
-    "pregrasp_position_m": target.tolist(),
-    "position_only": True,
-    "execute": False
-}
-
-path = out / "pregrasp_target.json"
+paths = parse_experiment("Generate a position-only pregrasp; never executes motion")
+metadata = load_metadata(paths)
+T = np.load(paths.results / "object_pose_panda_link0.npy", allow_pickle=False)
+result = build_pregrasp(T, metadata)
+path = paths.results / "pregrasp_target.json"
 path.write_text(json.dumps(result, indent=2))
-
-print("Object center:", np.round(center, 5))
-print("Pregrasp target:", np.round(target, 5))
+print("Object center:", np.round(result["object_center_m"], 5))
+print("Pregrasp target:", np.round(result["pregrasp_position_m"], 5))
 print("PREGRASP TARGET READY:", path)
